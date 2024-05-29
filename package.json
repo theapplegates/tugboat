@@ -1,8 +1,8 @@
 {
 	"name": "@11ty/tugboat",
 	"version": "1.0.0",
-	"description": "A modern starter project using Eleventy and WebC.",
 	"type": "module",
+	"description": "A modern starter project using Eleventy and WebC.",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
 		"start": "npx @11ty/eleventy --serve --quiet --incremental",
@@ -31,12 +31,12 @@
 	},
 	"homepage": "https://github.com/11ty/eleventy-tugboat#readme",
 	"devDependencies": {
-		"@11ty/eleventy": "3.0.0-alpha.1",
-		"@11ty/eleventy-img": "^3.1.8",
+		"@11ty/eleventy": "^3.0.0-alpha.10",
+		"@11ty/eleventy-img": "5.0.0-beta.4",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
 		"@11ty/eleventy-plugin-webc": "^0.11.2",
 		"emoji-short-name": "^2.0.0",
-		"linkedom": "^0.14.25"
+		"linkedom": "^0.18.0"
 	},
 	"dependencies": {
 		"@11ty/is-land": "^4.0.0"
