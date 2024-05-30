@@ -7,7 +7,7 @@
 		<meta name="description" :content="description || metadata.description">
 
 		<!--- Uncomment this if you’d like folks to know that you used Eleventy to build your site! --->
-		<!--- <meta name="generator" :content="eleventy.generator"> --->
+		<meta name="generator" :content="eleventy.generator">
 
 		<script webc:keep @raw="getBundle('js', 'head')"></script>
 
