@@ -1,10 +1,11 @@
-import pluginWebc from "@11ty/eleventy-plugin-webc";
-import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
-import { eleventyImagePlugin } from "@11ty/eleventy-img";
-import emojiShortName from "emoji-short-name";
-import { parseHTML } from "linkedom";
+const pluginWebc = require("@11ty/eleventy-plugin-webc");
+const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const { eleventyImagePlugin } = require("@11ty/eleventy-img");
+const emojiShortName = require("emoji-short-name");
+const {parseHTML} = require("linkedom");
 
-export default function(eleventyConfig) {
+/** @param {import('@11ty/eleventy').UserConfig} eleventyConfig */
+module.exports = function(eleventyConfig) {
 	eleventyConfig.ignores.add("./README.md");
 	eleventyConfig.addWatchTarget("./_components/**/*.css");
 
@@ -23,7 +24,7 @@ export default function(eleventyConfig) {
 	});
 
 	eleventyConfig.addPlugin(eleventyImagePlugin, {
-		formats: ["avif", "webp", "jpeg"],
+		formats: ["webp", "jpeg"],
 		urlPath: "/img/",
 
 		defaultAttributes: {
@@ -38,7 +39,7 @@ export default function(eleventyConfig) {
 
 	eleventyConfig.addJavaScriptFunction("emojiShortName", (emoji) => {
 		return emojiShortName[emoji];
-	});
+	})
 
 	eleventyConfig.addJavaScriptFunction("selectFromHtml", (html, selector) => {
 		const { document } = parseHTML(html);

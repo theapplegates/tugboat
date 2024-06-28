@@ -1,8 +1,8 @@
 {
 	"name": "@11ty/tugboat",
 	"version": "1.0.0",
-	"type": "module",
 	"description": "A modern starter project using Eleventy and WebC.",
+	"type": "module",
 	"scripts": {
 		"build": "npx @11ty/eleventy",
 		"start": "npx @11ty/eleventy --serve --quiet --incremental",
@@ -11,12 +11,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/11ty/eleventy-tugboat.git"
+		"url": "git://github.com/theapplegates/eleventy-tugboat.git"
 	},
 	"author": {
 		"name": "Zach Leatherman",
 		"email": "zachleatherman@gmail.com",
-		"url": "https://zachleat.com/"
+		"url": "https://tugboat.paulapplegate.com/"
 	},
 	"license": "MIT",
 	"engines": {
@@ -31,12 +31,13 @@
 	},
 	"homepage": "https://github.com/11ty/eleventy-tugboat#readme",
 	"devDependencies": {
-		"@11ty/eleventy": "^3.0.0-alpha.10",
-		"@11ty/eleventy-img": "5.0.0-beta.4",
+		"@11ty/eleventy": "3.0.0-alpha.14",
+		"@11ty/eleventy-img": "^5.0.0-beta.4",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
 		"@11ty/eleventy-plugin-webc": "^0.11.2",
 		"emoji-short-name": "^2.0.0",
-		"linkedom": "^0.18.0"
+		"sharp": "^0.33.4",
+		"linkedom": "^0.14.25"
 	},
 	"dependencies": {
 		"@11ty/is-land": "^4.0.0"
