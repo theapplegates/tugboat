@@ -90,6 +90,11 @@ let layout = "layouts/base.webc";
 <p><em>Photo by <a href="https://unsplash.com/de/@mbuff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sung Jin Cho</a> on <a href="https://unsplash.com/photos/5dgq-7DySyE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.</em></p>
 </live-demo>
 
+<live-demo @wrap>
+<img webc:is="eleventy-image" width="150, 300, 600, 850, 1200, 1800, 2150" sizes="100vw" src="img/bram-van-oost-89vaIi2nVa4-unsplash_ysqaqr.jpg" formats="avif,webp,jpeg" alt="A puppy living his best puppy life.">
+
+<p><em>Photo by <a href="t">Bram Van Oost</a> on <a href="">Unsplash</a>.</em></p>
+</live-demo>
 
 <h3>Syntax Highlighting</h3>
 

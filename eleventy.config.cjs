@@ -24,7 +24,7 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addPlugin(eleventyImagePlugin, {
-		formats: ["webp", "jpeg"],
+		formats: ["avif", "webp", "jpeg"],
 		urlPath: "/img/",
 
 		defaultAttributes: {
