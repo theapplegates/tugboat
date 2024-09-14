@@ -85,55 +85,11 @@ let layout = "layouts/base.webc";
 <p>A very large <code>1600×1200</code> source image has been downscaled to <code>400w</code> and <code>800w</code> output sizes in three separate image formats (<code>avif</code>, <code>webp</code>, and <code>jpeg</code>). The image component includes the <code>width</code> and <code>height</code> attributes to eliminate <a href="https://web.dev/cls/">Content Layout Shift</a>, decides whether the <code>picture</code> syntax is necessary, and generates optimal markup using <code>srcset</code>.</p>
 
 <live-demo @wrap>
-<img webc:is="eleventy-image" width="400,800" sizes="100vw" src="img/sung-jin-cho-5dgq-7DySyE-unsplash.jpg" formats="avif,webp,jpeg" alt="A photo of a small blue and white tugboat next to a very large shipping container ship full of multi-colored shipping containers.">
+<img webc:is="eleventy-image" width="150, 300, 600, 850, 1200, 1800, 2150" sizes="100vw" src="img/sung-jin-cho-5dgq-7DySyE-unsplash.jpg" formats="avif,webp,jpeg" alt="A photo of a small blue and white tugboat next to a very large shipping container ship full of multi-colored shipping containers.">
 
-<p><em>Photo by <a href="https://unsplash.com/de/@mbuff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sung Jin Cho</a> on <a href="https://unsplash.com/photos/5dgq-7DySyE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.</em></p>
+<p style="font-size: 14px; font-style: italic;"> <em>Photo by <a href="https://unsplash.com/de/@mbuff?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Sung Jin Cho</a> on <a href="https://unsplash.com/photos/5dgq-7DySyE?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>.</em> </p>
 </live-demo>
 
-<live-demo @wrap>
-<img webc:is="eleventy-image" width="150, 300, 600, 850, 1200, 1800, 2150" sizes="100vw" src="img/bram-van-oost-89vaIi2nVa4-unsplash_ysqaqr.jpg" formats="avif,webp,jpeg" alt="A puppy living his best puppy life.">
-
-<p><em>Photo by <a href="t">Bram Van Oost</a> on <a href="">Unsplash</a>.</em></p>
-</live-demo>
-<picture>
-	<source
-	  type="image/jxl"
-	  srcset="https://res.cloudinary.com/paulapplegate-com/image/upload/c_limit,w_50/f_jxl/bram-van-oost-89vaIi2nVa4-unsplash_ysqaqr.jxl 50w,
-  https://res.cloudinary.com/paulapplegate-com/image/upload/c_limit,w_697/f_jxl/bram-van-oost-89vaIi2nVa4-unsplash_ysqaqr.jxl 697w,
-  https://res.cloudinary.com/paulapplegate-com/image/upload/c_limit,w_1000/f_jxl/bram-van-oost-89vaIi2nVa4-unsplash_ysqaqr.jxl 1000w,
-  https://res.cloudinary.com/paulapplegate-com/image/upload/c_limit,w_2148/f_jxl/bram-van-oost-89vaIi2nVa4-unsplash_ysqaqr.jxl 2148w"
-	  sizes="(max-width: 50px) 50px,
-  (max-width: 697px) 697px,
-  (max-width: 1000px) 1000px,
-  (max-width: 2148px) 2148px, 100vw"
-	>
-	<source
-	  type="image/avif"
-	  srcset="https://res.cloudinary.com/paulapplegate-com/image/upload/c_limit,w_50/f_jxl/bram-van-oost-89vaIi2nVa4-unsplash_ysqaqr.jxl 50w,
-  https://res.cloudinary.com/paulapplegate-com/image/upload/c_limit,w_697/f_jxl/bram-van-oost-89vaIi2nVa4-unsplash_ysqaqr.jxl 697w,
-  https://res.cloudinary.com/paulapplegate-com/image/upload/c_limit,w_1000/f_jxl/bram-van-oost-89vaIi2nVa4-unsplash_ysqaqr.jxl 1000w,
-  https://res.cloudinary.com/paulapplegate-com/image/upload/c_limit,w_2148/f_jxl/bram-van-oost-89vaIi2nVa4-unsplash_ysqaqr.jxl 2148w"
-	  sizes="(max-width: 50px) 50px,
-  (max-width: 697px) 697px,
-  (max-width: 1000px) 1000px,
-  (max-width: 2148px) 2148px, 100vw"
-	>
-	<source
-	  type="image/jpeg"
-	  srcset="https://res.cloudinary.com/paulapplegate-com/image/upload/c_limit,w_50/f_jxl/bram-van-oost-89vaIi2nVa4-unsplash_ysqaqr.jxl 50w,
-  https://res.cloudinary.com/paulapplegate-com/image/upload/c_limit,w_697/f_jxl/bram-van-oost-89vaIi2nVa4-unsplash_ysqaqr.jxl 697w,
-  https://res.cloudinary.com/paulapplegate-com/image/upload/c_limit,w_1000/f_jxl/bram-van-oost-89vaIi2nVa4-unsplash_ysqaqr.jxl 1000w,
-  https://res.cloudinary.com/paulapplegate-com/image/upload/c_limit,w_2148/f_jxl/bram-van-oost-89vaIi2nVa4-unsplash_ysqaqr.jxl 2148w"
-	  sizes="(max-width: 50px) 50px,
-  (max-width: 697px) 697px,
-  (max-width: 1000px) 1000px,
-  (max-width: 2148px) 2148px, 100vw"
-	>
-	<img
-	  src="https://res.cloudinary.com/paulapplegate-com/image/upload/c_limit,w_50/f_jxl/bram-van-oost-89vaIi2nVa4-unsplash_ysqaqr.jxl"
-	  alt="Puppy living his best puppy life"
-	/>
-  </picture>
 
 <h3>Syntax Highlighting</h3>
 

@@ -31,10 +31,10 @@
 	},
 	"homepage": "https://github.com/11ty/eleventy-tugboat#readme",
 	"devDependencies": {
-		"@11ty/eleventy": "^3.0.0-alpha.18",
+		"@11ty/eleventy": "^3.0.0-alpha.20",
 		"@11ty/eleventy-img": "^5.0.0-beta.10",
 		"@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
-		"@11ty/eleventy-plugin-webc": "^0.11.1-alpha.1",
+		"@11ty/eleventy-plugin-webc": "^0.11.2",
 		"emoji-short-name": "^2.0.0",
 		"linkedom": "^0.18.4",
 		"netlify-plugin-minify-html": "^0.3.1"
