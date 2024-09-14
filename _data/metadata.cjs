@@ -5,5 +5,5 @@ module.exports = {
 	title: "Tugboat" || pkg.name,
 	description: "" || pkg.description,
 	language: "en",
-	repository: "https://github.com/11ty/tugboat/blob/main/",
+	repository: "https://github.com/theapplegates/tugboat/blob/main/",
 };
